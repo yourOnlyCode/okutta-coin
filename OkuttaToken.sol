@@ -1,7 +1,7 @@
 pragma solidity ^0.8.5;
 
 // openzepplin-contracts on github
-//import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol';
+import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol';
 // Access the Repo above to help continue building upon this Token, giving it new functionalities.
 
 contract OkuttaToken is ERC20 {
