@@ -1,7 +1,7 @@
 pragma solidity ^0.8.5;
 
 // openzepplin-contracts on github
-import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol';
+//import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol';
 // Access the Repo above to help continue building upon this Token, giving it new functionalities.
 
 contract OkuttaToken is ERC20 {
@@ -13,11 +13,11 @@ contract OkuttaToken is ERC20 {
 
     function mint(address to, uint amounr) external {
         require(msg.sender == admin, "function for admin use only");
-        _mint(to, amount)
+        _mint(to, amount);
     }
 
     // This will burn an amount of tokens you have. I.E. if the admin wants the token to be more valuable he may burn some of his own.
     function burn(uint amount) external {
-        _burn(msg.sender, amount) 
+        _burn(msg.sender, amount);
     }
 }
